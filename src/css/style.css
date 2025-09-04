@@ -1,0 +1,34 @@
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --font-primary: 'Courier New', Courier, monospace;
+    --canvas-margin: 20px;
+    --title-padding: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+}
+
+#root {
+    text-align: center;
+}
+
+#root>h1 {
+    margin: 0 10% 0 0;
+    padding: var(--title-padding) 0;
+    color: var(--text-color);
+}
+
+#root>canvas {
+    display: block;
+    margin: var(--canvas-margin) auto;
+}
